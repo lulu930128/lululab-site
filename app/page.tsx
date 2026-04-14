@@ -1,173 +1,171 @@
 export default function HomePage() {
-  const projects = [
+  const categories = [
     {
-      title: "股票資訊抓取整理系統",
-      description:
-        "整理市場資訊、抓取資料並轉成可讀性較高的分析結果，目標是做成穩定、可擴充的資訊整理流程。",
-      tags: ["Python", "Data", "Automation"],
+      title: "Projects",
+      description: "分類說明之後補上。",
+      href: "/projects",
     },
     {
-      title: "桌寵 vNext",
-      description:
-        "以模組化方式重建桌寵系統，拆分 LLM、TTS、Bridge 與 Runtime，提升可維護性與可替換性。",
-      tags: ["AI", "LLM", "System Design"],
+      title: "Language",
+      description: "分類說明之後補上。",
+      href: "/language",
     },
     {
-      title: "自動化專案",
-      description:
-        "把日常流程、資料整理與報表產出自動化，減少重複操作並提升可追蹤性。",
-      tags: ["Automation", "Workflow", "Engineering"],
+      title: "Game",
+      description: "分類說明之後補上。",
+      href: "/game",
     },
     {
-      title: "個人網站",
-      description:
-        "目前建置中的作品集網站，作為專案展示、技術整理與個人品牌的主基地。",
-      tags: ["Next.js", "Frontend", "Portfolio"],
+      title: "About",
+      description: "分類說明之後補上。",
+      href: "/about",
     },
   ];
 
   return (
-    <main className="min-h-screen bg-neutral-50 text-neutral-900">
-      <section className="relative overflow-hidden bg-neutral-950 text-white">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(99,102,241,0.35),transparent_35%),radial-gradient(circle_at_bottom_right,rgba(59,130,246,0.22),transparent_30%)]" />
-        <div className="relative mx-auto flex min-h-[80vh] max-w-6xl flex-col justify-center px-6 py-20 sm:px-10 lg:px-12">
-          <div className="max-w-3xl">
-            <p className="mb-4 text-sm uppercase tracking-[0.25em] text-neutral-300">
-              Lulu Lab
-            </p>
-            <h1 className="text-4xl font-semibold leading-tight sm:text-5xl lg:text-6xl">
-              Building practical tools, systems, and interactive projects.
-            </h1>
-            <p className="mt-6 max-w-2xl text-base leading-7 text-neutral-300 sm:text-lg">
-              我正在建立自己的個人網站，整理作品、記錄系統設計思路，並逐步把自動化、資料處理、互動型 AI
-              專案整合成可以長期維護的作品集。
-            </p>
-
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a
-                href="#projects"
-                className="inline-flex items-center justify-center rounded-2xl bg-white px-5 py-3 text-sm font-medium text-neutral-950 transition hover:scale-[1.01]"
-              >
-                View Projects
-              </a>
-              <a
-                href="#about"
-                className="inline-flex items-center justify-center rounded-2xl border border-white/20 bg-white/5 px-5 py-3 text-sm font-medium text-white transition hover:bg-white/10"
-              >
-                About Me
-              </a>
-            </div>
-          </div>
-
-          <div className="mt-16 grid gap-4 sm:grid-cols-3">
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
-              <p className="text-sm text-neutral-400">Focus</p>
-              <p className="mt-2 text-lg font-medium">Automation & Systems</p>
-            </div>
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
-              <p className="text-sm text-neutral-400">Current Direction</p>
-              <p className="mt-2 text-lg font-medium">Portfolio Website + Project Rebuild</p>
-            </div>
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-5 backdrop-blur-sm">
-              <p className="text-sm text-neutral-400">Style</p>
-              <p className="mt-2 text-lg font-medium">Practical, traceable, and scalable</p>
-            </div>
+    <main className="min-h-screen bg-[#f6f3fb] text-neutral-900">
+      <section className="mx-auto max-w-6xl px-4 pt-6 sm:px-6 lg:px-8">
+        <div className="overflow-hidden rounded-[32px] border border-[#ddd6f3] bg-gradient-to-r from-[#efe8ff] via-[#f7f3ff] to-[#e8f1ff] shadow-sm">
+          <div className="relative h-[220px] w-full sm:h-[280px]">
+            <img
+              src="/images/home-banner.jpg"
+              alt="Lulu banner"
+              className="h-full w-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#2a2240]/20 via-transparent to-[#6d77c8]/20" />
           </div>
         </div>
       </section>
 
-      <section id="about" className="mx-auto max-w-6xl px-6 py-20 sm:px-10 lg:px-12">
-        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
-          <div>
-            <p className="text-sm font-medium uppercase tracking-[0.2em] text-indigo-600">
-              About
-            </p>
-            <h2 className="mt-4 text-3xl font-semibold text-neutral-950 sm:text-4xl">
-              工程導向的實作型開發者
-            </h2>
-            <p className="mt-6 text-base leading-8 text-neutral-600">
-              我偏好把想法落成可執行、可驗證、可持續維護的系統。近期重心放在個人網站建置、資料整理流程、
-              自動化工具與互動型 AI 專案規劃。比起只做展示，我更在意專案能不能真的運作、能不能被重建、以及之後能不能繼續擴充。
-            </p>
-          </div>
-
-          <div className="grid gap-4">
-            <div className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
-              <h3 className="text-base font-semibold">技能方向</h3>
-              <p className="mt-3 text-sm leading-7 text-neutral-600">
-                Python、自動化、資料整理、系統整合、基礎前端開發、專案結構規劃。
-              </p>
-            </div>
-            <div className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm">
-              <h3 className="text-base font-semibold">目前重點</h3>
-              <p className="mt-3 text-sm leading-7 text-neutral-600">
-                先建立作品集網站，作為專案展示基地；之後再逐步接回桌寵 vNext、股票資訊整理系統與更多個人專案。
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="projects" className="mx-auto max-w-6xl px-6 pb-20 sm:px-10 lg:px-12">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-          <div>
-            <p className="text-sm font-medium uppercase tracking-[0.2em] text-indigo-600">
-              Projects
-            </p>
-            <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">目前的專案方向</h2>
-          </div>
-          <p className="max-w-xl text-sm leading-7 text-neutral-600">
-            這一版先放作品概覽，後續可以再擴充成專案細節頁、技術堆疊、系統架構圖與開發紀錄。
-          </p>
-        </div>
-
-        <div className="mt-10 grid gap-6 md:grid-cols-2">
-          {projects.map((project) => (
-            <article
-              key={project.title}
-              className="rounded-3xl border border-neutral-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
-            >
-              <h3 className="text-xl font-semibold text-neutral-950">{project.title}</h3>
-              <p className="mt-4 text-sm leading-7 text-neutral-600">
-                {project.description}
-              </p>
-              <div className="mt-5 flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-xs font-medium text-neutral-700"
-                  >
-                    {tag}
-                  </span>
-                ))}
+      <section className="mx-auto -mt-10 max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div className="rounded-[32px] border border-white/60 bg-white/90 p-6 shadow-sm backdrop-blur sm:p-8">
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+            <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
+              <div className="h-24 w-24 overflow-hidden rounded-full border-4 border-white bg-[#ede7fb] shadow-sm sm:h-28 sm:w-28">
+                <img
+                  src="/images/profile-avatar.jpg"
+                  alt="Lulu avatar"
+                  className="h-full w-full object-cover"
+                />
               </div>
-            </article>
-          ))}
+
+              <div className="max-w-3xl">
+                <p className="text-sm font-medium uppercase tracking-[0.22em] text-[#7d6ad6]">
+                  Lulu
+                </p>
+                <h1 className="mt-2 text-3xl font-semibold text-neutral-950 sm:text-4xl">
+                  Lulu星
+                </h1>
+
+                <div className="mt-4 space-y-2 text-sm leading-7 text-neutral-700 sm:text-base">
+                  <p>ASE, 設備工程師</p>
+                  <p>
+                    曾接觸過的東西：程式 / 資料管控 / 剪輯 / 修圖 / 調音 / 調酒 /
+                    咖啡 / 簡易摩托維修 / 小物件維修
+                  </p>
+                  <p className="text-[#5e549b]">
+                    最喜歡的一句話：いつもきみの隣に、幸せな魔法がありますように
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="flex flex-wrap gap-2 lg:max-w-xs lg:justify-end">
+              <span className="rounded-full bg-[#f1ecff] px-3 py-1 text-xs font-medium text-[#6e5fc7]">
+                Project Archive
+              </span>
+              <span className="rounded-full bg-[#edf4ff] px-3 py-1 text-xs font-medium text-[#5470c7]">
+                Language Notes
+              </span>
+              <span className="rounded-full bg-[#f5efff] px-3 py-1 text-xs font-medium text-[#8a63c7]">
+                Game Record
+              </span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="contact" className="border-t border-neutral-200 bg-white">
-        <div className="mx-auto max-w-6xl px-6 py-16 sm:px-10 lg:px-12">
-          <div className="flex flex-col gap-8 rounded-3xl border border-neutral-200 bg-neutral-50 p-8 sm:p-10 lg:flex-row lg:items-center lg:justify-between">
-            <div>
-              <p className="text-sm font-medium uppercase tracking-[0.2em] text-indigo-600">
-                Contact
-              </p>
-              <h2 className="mt-3 text-2xl font-semibold sm:text-3xl">
-                這裡會逐步變成我的作品基地
-              </h2>
-              <p className="mt-4 max-w-2xl text-sm leading-7 text-neutral-600">
-                目前網站仍在建置中。之後會補上更多專案細節、展示頁面，以及更完整的個人介紹與聯絡方式。
-              </p>
+      <section className="mx-auto max-w-6xl px-4 py-14 sm:px-6 lg:px-8">
+        <div className="grid gap-10 lg:grid-cols-[1.15fr_0.85fr]">
+          <div className="rounded-[28px] border border-[#ddd6f3] bg-white p-6 shadow-sm sm:p-8">
+            <div className="flex items-end justify-between gap-4">
+              <div>
+                <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7d6ad6]">
+                  Featured Demo
+                </p>
+                <h2 className="mt-3 text-2xl font-semibold sm:text-3xl">
+                  桌寵 Demo
+                </h2>
+              </div>
             </div>
 
-            <div className="flex flex-col gap-3 text-sm text-neutral-700">
-              <a href="https://github.com/lulu930128" className="hover:text-neutral-950">
-                GitHub / lulu930128
-              </a>
-              <p>Email / your-email@example.com</p>
+            <div className="mt-6 overflow-hidden rounded-2xl border border-[#e7e0fb] bg-black">
+              <video
+                controls
+                preload="metadata"
+                className="aspect-video w-full"
+              >
+                <source src="/videos/deskpet-demo.mp4" type="video/mp4" />
+                你的瀏覽器不支援影片播放。
+              </video>
+            </div>
+
+            <p className="mt-4 text-sm leading-7 text-neutral-600">
+              這裡先放桌寵專案的展示影片。之後可以再加上簡短說明、技術標籤，
+              或改成 YouTube 嵌入版本。
+            </p>
+          </div>
+
+          <div className="rounded-[28px] border border-[#ddd6f3] bg-[#fbf9ff] p-6 shadow-sm sm:p-8">
+            <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7d6ad6]">
+              Explore
+            </p>
+            <h2 className="mt-3 text-2xl font-semibold sm:text-3xl">
+              主分類入口
+            </h2>
+            <p className="mt-4 text-sm leading-7 text-neutral-600">
+              這裡先作為主頁入口，之後每個分類都可以拆成自己的子頁面。
+            </p>
+
+            <div className="mt-6 grid gap-4">
+              {categories.map((item) => (
+                <a
+                  key={item.title}
+                  href={item.href}
+                  className="group rounded-2xl border border-[#e4ddf8] bg-white p-5 transition hover:-translate-y-0.5 hover:border-[#cfc2f4] hover:shadow-sm"
+                >
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <h3 className="text-lg font-semibold text-neutral-950">
+                        {item.title}
+                      </h3>
+                      <p className="mt-2 text-sm leading-7 text-neutral-600">
+                        {item.description}
+                      </p>
+                    </div>
+                    <span className="text-[#8a79da] transition group-hover:translate-x-0.5">
+                      →
+                    </span>
+                  </div>
+                </a>
+              ))}
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 pb-16 sm:px-6 lg:px-8">
+        <div className="rounded-[28px] border border-[#ddd6f3] bg-white p-6 shadow-sm sm:p-8">
+          <p className="text-sm font-medium uppercase tracking-[0.2em] text-[#7d6ad6]">
+            About this site
+          </p>
+          <h2 className="mt-3 text-2xl font-semibold sm:text-3xl">
+            一個慢慢長出來的個人基地
+          </h2>
+          <p className="mt-4 max-w-3xl text-sm leading-8 text-neutral-600 sm:text-base">
+            這裡會逐步整理我的專案、語言學習、遊戲紀錄與個人興趣。現在先從主頁開始，
+            後面再慢慢拆出更多子頁面與內容。
+          </p>
         </div>
       </section>
     </main>
