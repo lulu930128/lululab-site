@@ -2,30 +2,30 @@ export default function HomePage() {
   const categories = [
     {
       title: "Projects",
-      description: "分類說明之後補上。",
+      description: "整理目前在做、做過，或之後還想繼續擴充的專案與系統。",
       href: "/projects",
     },
     {
       title: "Language",
-      description: "分類說明之後補上。",
+      description: "放日文學習、句型筆記、遊戲裡遇到的表達，以及自己的整理紀錄。",
       href: "/language",
     },
     {
       title: "Game",
-      description: "分類說明之後補上。",
+      description: "收錄玩過的作品、喜歡的內容，以及之後想慢慢整理的心得與記錄。",
       href: "/game",
     },
     {
       title: "About",
-      description: "分類說明之後補上。",
+      description: "關於我自己、碰過的東西、目前在做的事，還有這個網站想長成的樣子。",
       href: "/about",
     },
   ];
 
   const currentFocus = [
     "個人網站持續建置中",
-    "桌寵 Demo 與展示頁規劃中",
-    "之後會逐步拆出 Projects / Language / Game / About 子頁",
+    "AI 桌寵展示與內容整理中",
+    "日文學習持續進行中（N3 方向）",
   ];
 
   return (
@@ -41,15 +41,22 @@ export default function HomePage() {
                   </p>
 
                   <h1 className="mt-4 text-4xl font-semibold leading-tight text-neutral-950 sm:text-5xl lg:text-6xl">
-                    一個放作品、興趣與紀錄的個人基地
+                    個人專案、學習歷程
+                    <br />
+                    與作品紀錄網站
                   </h1>
 
                   <div className="mt-6 max-w-2xl space-y-3 text-sm leading-7 text-neutral-700 sm:text-base">
                     <p>Lulu星</p>
-                    <p>ASE, 設備工程師</p>
+                    <p>現職 ASE 設備工程師</p>
                     <p>
-                      曾接觸過的東西：程式 / 資料管控 / 剪輯 / 修圖 / 調音 /
-                      調酒 / 咖啡 / 簡易摩托維修 / 小物件維修
+                      比起只把東西做完，我更喜歡把碰過的東西整理成能持續累積的樣子。
+                      這裡會慢慢收錄我的專案、學習、興趣與作品紀錄。
+                    </p>
+                    <p>
+                      專長：後端處理 / 資料整理 / Database 處理
+                      <br />
+                      興趣：剪輯 / 修圖 / 調音 / 調酒 / 咖啡 / 騎車
                     </p>
                     <p className="text-[#5f569f]">
                       最喜歡的一句話：いつもきみの隣に、幸せな魔法がありますように
@@ -103,14 +110,14 @@ export default function HomePage() {
           <div className="grid gap-8 lg:grid-cols-[1.08fr_0.92fr]">
             <div className="rounded-[32px] border border-[#ddd6f3] bg-white p-6 shadow-sm sm:p-8">
               <p className="text-sm font-medium uppercase tracking-[0.22em] text-[#7a6ccf]">
-                Featured Demo
+                Demo Video
               </p>
               <h2 className="mt-3 text-3xl font-semibold text-neutral-950">
-                桌寵 Demo
+                AI 桌寵演示
               </h2>
               <p className="mt-4 max-w-2xl text-sm leading-7 text-neutral-600 sm:text-base">
-                這裡先放桌寵專案的展示影片。之後可以補上簡短說明、技術標籤，
-                或改成 YouTube 嵌入版本。
+                這裡先放目前最想展示的桌寵內容。之後可以補上功能說明、使用流程、
+                技術標籤，或改成 YouTube 嵌入版本。
               </p>
 
               <div className="mt-6 overflow-hidden rounded-[24px] border border-[#e8e0fb] bg-black shadow-sm">
@@ -151,7 +158,7 @@ export default function HomePage() {
                 </h3>
                 <p className="mt-4 text-sm leading-7 text-neutral-600 sm:text-base">
                   首頁先當作總入口，之後會再分出 Projects、Language、Game、
-                  About 等獨立子頁，把專案、興趣與紀錄慢慢整理起來。
+                  About 等獨立子頁，把專案、學習、興趣與記錄慢慢整理起來。
                 </p>
               </div>
             </div>
@@ -172,7 +179,7 @@ export default function HomePage() {
             </div>
 
             <p className="max-w-2xl text-sm leading-7 text-neutral-600 sm:text-base">
-              這裡先作為首頁的總入口，之後每個分類都可以拆成自己的頁面。
+              這裡先作為首頁的總入口，之後每個分類都會再慢慢拆成自己的頁面。
             </p>
           </div>
 
@@ -192,7 +199,7 @@ export default function HomePage() {
                   </span>
                 </div>
 
-                <p className="mt-4 min-h-[56px] text-sm leading-7 text-neutral-600">
+                <p className="mt-4 min-h-[112px] text-sm leading-7 text-neutral-600">
                   {item.description}
                 </p>
 
@@ -210,9 +217,9 @@ export default function HomePage() {
               <p className="text-sm font-medium uppercase tracking-[0.22em] text-[#7a6ccf]">
                 Projects
               </p>
-              <h3 className="mt-3 text-2xl font-semibold">代表內容預留區</h3>
+              <h3 className="mt-3 text-2xl font-semibold">專案內容預留區</h3>
               <p className="mt-4 text-sm leading-7 text-neutral-600">
-                之後可以放股票資訊系統、桌寵 vNext、自動化專案等精選內容。
+                之後可以放股票資訊抓取整理系統、桌寵 vNext、自動化專案與網站本身的建置紀錄。
               </p>
             </div>
 
@@ -222,7 +229,7 @@ export default function HomePage() {
               </p>
               <h3 className="mt-3 text-2xl font-semibold">語言內容預留區</h3>
               <p className="mt-4 text-sm leading-7 text-neutral-600">
-                之後可以放日文學習紀錄、筆記整理、遊戲中遇到的句型與表達。
+                之後可以放日文學習紀錄、文法筆記、遊戲中遇到的句型與表達整理。
               </p>
             </div>
 
@@ -232,7 +239,7 @@ export default function HomePage() {
               </p>
               <h3 className="mt-3 text-2xl font-semibold">遊戲內容預留區</h3>
               <p className="mt-4 text-sm leading-7 text-neutral-600">
-                之後可以放玩過的作品、心得、分類整理或你自己想收錄的內容。
+                之後可以放玩過的作品、喜歡的角色、心得整理，或你自己想收錄的紀錄。
               </p>
             </div>
           </div>
@@ -278,12 +285,12 @@ export default function HomePage() {
 
                 <div className="rounded-2xl border border-[#e3dbf9] bg-white px-5 py-4 text-sm leading-7 text-neutral-700">
                   <p className="font-medium text-neutral-950">Email</p>
-                  <p className="mt-2">之後補上</p>
+                  <p className="mt-2">thomas930128@gmail.com</p>
                 </div>
 
                 <div className="rounded-2xl border border-[#e3dbf9] bg-white px-5 py-4 text-sm leading-7 text-neutral-700">
-                  <p className="font-medium text-neutral-950">網站狀態</p>
-                  <p className="mt-2">Building in progress</p>
+                  <p className="font-medium text-neutral-950">IG</p>
+                  <p className="mt-2">lu_lu128_</p>
                 </div>
               </div>
             </div>
