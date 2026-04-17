@@ -53,17 +53,17 @@ export default function HomePage() {
     },
     {
       id: "quest-deskpet",
-      title: "AI 桌寵實作中",
+      title: "AI 桌寵展示頁與內容整理中",
       icon: "robot",
-      status: "In Progress - Project / Build",
+      status: "In Progress - Project / Showcase",
       progress: 20,
     },
     {
       id: "quest-learn",
       title: "日文學習持續進行中 (N3 方向)",
       icon: "brain",
-      status: "learning - Study / Language",
-      progress: 40,
+      status: "In Progress - Study / Language",
+      progress: 60,
     },
   ];
 
@@ -286,11 +286,12 @@ export default function HomePage() {
                   </span>
                   <div>
                     <p className="text-[11px] font-medium uppercase tracking-wider text-neutral-400">Featured Project Intro</p>
-                    <h3 className="mt-1 text-2xl font-semibold text-neutral-900">AI 桌寵實作 - TTS建置中</h3>
+                    <h3 className="mt-1 text-2xl font-semibold text-neutral-900">AI 桌寵演示</h3>
                   </div>
                 </div>
                 <p className="mt-6 text-sm leading-8 text-neutral-600 sm:text-base">
-                  近期預計先將LLM/TTS/皮三條路打通並各自有獨立空間不互相影響
+                  除了影片本身，後面也會慢慢補上功能說明、使用流程，以及我為什麼想做這個方向。
+                  這裡將持續收錄我的任務進度與規劃詳情。
                 </p>
               </div>
 
@@ -328,10 +329,10 @@ export default function HomePage() {
                   <h3 className="mb-4 mt-2 text-lg font-semibold text-neutral-950">規劃備註</h3>
                   <div className="grid gap-3">
                     <div className="rounded-xl border border-neutral-100 bg-neutral-50/70 p-4 text-xs font-medium leading-relaxed text-neutral-700 shadow-sm transition hover:bg-neutral-50">
-                      目前先以完整製作網站為主
+                      目前先以桌寵展示為主，之後再補上結構、功能與版本差異。
                     </div>
                     <div className="rounded-xl border border-neutral-100 bg-neutral-50/70 p-4 text-xs font-medium leading-relaxed text-neutral-700 shadow-sm transition hover:bg-neutral-50">
-                      同步學習日文並加強AI桌寵功能
+                      後續可補：系統架構、使用情境、展示截圖、開發紀錄。
                     </div>
                   </div>
                 </div>
