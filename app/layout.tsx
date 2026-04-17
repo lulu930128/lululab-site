@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lulu自介網",
+  title: "Lulu星 | 個人專案與學習紀錄",
   description: "Lulu 的個人專案、學習歷程與作品紀錄網站",
 };
 

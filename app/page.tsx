@@ -17,28 +17,28 @@ export default function HomePage() {
       title: "Projects",
       description: "整理目前在做、做過，或之後還想繼續擴充的專案與系統。",
       href: "/projects",
-      image: "/images/category-projects.jpg",
+      image: "/images/main/category-projects.jpg",
       tags: ["Systems", "Automation", "Archive"],
     },
     {
       title: "Language",
       description: "放日文學習、句型筆記、遊戲裡遇到的表達，以及自己的整理紀錄。",
       href: "/language",
-      image: "/images/category-language.jpg",
+      image: "/images/main/category-language.jpg",
       tags: ["Japanese", "Grammar"],
     },
     {
       title: "Experience",
       description: "收錄旅遊、遊戲、生活趣事，以及想慢慢整理下來的個人經歷與感受。",
       href: "/experience",
-      image: "/images/category-experience.jpg",
+      image: "/images/main/category-experience.jpg",
       tags: ["Travel", "Galgame", "Music"],
     },
     {
       title: "About",
       description: "關於我自己、碰過的東西、目前在做的事，還有這個網站想長成的樣子。",
       href: "/about",
-      image: "/images/category-about.jpg",
+      image: "/images/main/category-about.jpg",
       tags: ["Profile", "Info"],
     },
   ];
@@ -144,7 +144,7 @@ export default function HomePage() {
                 <div className="group relative flex h-[280px] w-full flex-col justify-end overflow-hidden rounded-[2rem] border border-[#eCeAf4] shadow-[0_8px_30px_rgb(120,100,180,0.04)]">
                   {/* 使用 center_15% 將焦點放在臉部高度，避免切頭 */}
                   <img 
-                    src="/images/home-banner.jpg" 
+                    src="/images/main/home-banner.jpg" 
                     alt="Lulu" 
                     className="absolute inset-0 h-full w-full object-cover object-[center_15%] transition-transform duration-700 group-hover:scale-105" 
                   />
@@ -167,7 +167,7 @@ export default function HomePage() {
                     
                     {/* 小圓形徽章 (點綴用的大頭貼) */}
                     <div className="h-16 w-16 shrink-0 overflow-hidden rounded-full border-2 border-white/20 bg-white/10 shadow-2xl backdrop-blur-md transition-transform duration-500 group-hover:-rotate-12 group-hover:scale-110">
-                      <img src="/images/profile-avatar.jpg" alt="Avatar" className="h-full w-full object-cover opacity-90" />
+                      <img src="/images/main/profile-avatar.jpg" alt="Avatar" className="h-full w-full object-cover opacity-90" />
                     </div>
                   </div>
                 </div>
