@@ -4,21 +4,25 @@ export default function HomePage() {
       title: "Projects",
       description: "整理目前在做、做過，或之後還想繼續擴充的專案與系統。",
       href: "/projects",
+      image: "/images/category-projects.jpg",
     },
     {
       title: "Language",
       description: "放日文學習、句型筆記、遊戲裡遇到的表達，以及自己的整理紀錄。",
       href: "/language",
+      image: "/images/category-language.jpg",
     },
     {
-      title: "Game",
-      description: "收錄玩過的作品、喜歡的內容，以及之後想慢慢整理的心得與記錄。",
-      href: "/game",
+      title: "Experience",
+      description: "收錄旅遊、遊戲、生活趣事，以及想慢慢整理下來的個人經歷。",
+      href: "/experience",
+      image: "/images/category-experience.jpg",
     },
     {
       title: "About",
       description: "關於我自己、碰過的東西、目前在做的事，還有這個網站想長成的樣子。",
       href: "/about",
+      image: "/images/category-about.jpg",
     },
   ];
 
@@ -87,7 +91,7 @@ export default function HomePage() {
                     Language Notes
                   </span>
                   <span className="rounded-full bg-[#f6efff] px-3 py-1 text-xs font-medium text-[#9167c8]">
-                    Game Record
+                    Experience Record
                   </span>
                 </div>
               </div>
@@ -121,10 +125,15 @@ export default function HomePage() {
               </p>
 
               <div className="mt-6 overflow-hidden rounded-[24px] border border-[#e8e0fb] bg-black shadow-sm">
-                <video controls preload="metadata" className="aspect-video w-full">
-                  <source src="/videos/deskpet-demo.mp4" type="video/mp4" />
-                  你的瀏覽器不支援影片播放。
-                </video>
+                <div className="aspect-video w-full">
+                  <iframe
+                    className="h-full w-full"
+                    src="https://www.youtube.com/embed/5yCGeQQ-fpo"
+                    title="deskpet demo"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  />
+                </div>
               </div>
             </div>
 
@@ -157,7 +166,7 @@ export default function HomePage() {
                   這裡會慢慢長出更多內容
                 </h3>
                 <p className="mt-4 text-sm leading-7 text-neutral-600 sm:text-base">
-                  首頁先當作總入口，之後會再分出 Projects、Language、Game、
+                  首頁先當作總入口，之後會再分出 Projects、Language、Experience、
                   About 等獨立子頁，把專案、學習、興趣與記錄慢慢整理起來。
                 </p>
               </div>
@@ -166,49 +175,191 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="categories" className="w-full">
-        <div className="mx-auto max-w-7xl px-6 py-4 lg:px-10 lg:py-8">
-          <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-            <div>
-              <p className="text-sm font-medium uppercase tracking-[0.22em] text-[#7a6ccf]">
-                Main Sections
-              </p>
-              <h2 className="mt-3 text-3xl font-semibold text-neutral-950 sm:text-4xl">
-                主分類入口
-              </h2>
-            </div>
-
-            <p className="max-w-2xl text-sm leading-7 text-neutral-600 sm:text-base">
-              這裡先作為首頁的總入口，之後每個分類都會再慢慢拆成自己的頁面。
+     <section id="categories" className="w-full">
+      <div className="mx-auto max-w-7xl px-6 py-8 lg:px-10 lg:py-12">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p className="text-sm font-medium uppercase tracking-[0.22em] text-[#7a6ccf]">
+              Main Sections
             </p>
+            <h2 className="mt-3 text-3xl font-semibold text-neutral-950 sm:text-4xl">
+              主分類入口
+            </h2>
           </div>
 
-          <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {categories.map((item) => (
-              <a
-                key={item.title}
-                href={item.href}
-                className="group rounded-[28px] border border-[#ddd6f3] bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-[#cfc2f4] hover:shadow-md"
-              >
-                <div className="flex items-center justify-between gap-4">
-                  <h3 className="text-2xl font-semibold text-neutral-950">
-                    {item.title}
+          <p className="max-w-2xl text-sm leading-7 text-neutral-600 sm:text-base">
+            這裡先作為首頁入口，之後每個分類都會慢慢長成自己的頁面與整理區。
+          </p>
+        </div>
+
+        <div className="mt-10 grid gap-6 lg:grid-cols-12 auto-rows-[220px]">
+          {/* Projects */}
+          <a
+            href="/projects"
+            className="group relative overflow-hidden rounded-[34px] border border-[#ddd6f3] bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md lg:col-span-7 lg:row-span-2"
+          >
+            <img
+              src="/images/category-projects.jpg"
+              alt="Projects"
+              className="absolute inset-0 h-full w-full object-cover opacity-[0.75] transition duration-300 group-hover:scale-[1.04]"
+            />
+            <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.5),rgba(245,241,251,0.5))]" />
+
+            <div className="relative flex h-full flex-col justify-between p-7 sm:p-8">
+              <div>
+                <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#7a6ccf]">
+                  Work / Build
+                </p>
+                <div className="mt-4 flex items-start justify-between gap-4">
+                  <h3 className="text-4xl font-semibold leading-none text-neutral-950 sm:text-5xl">
+                    Projects
                   </h3>
-                  <span className="text-lg text-[#8a79da] transition group-hover:translate-x-1">
+                  <span className="text-xl text-[#8a79da] transition duration-300 group-hover:translate-x-1">
                     →
                   </span>
                 </div>
-
-                <p className="mt-4 min-h-[112px] text-sm leading-7 text-neutral-600">
-                  {item.description}
+                <p className="mt-6 max-w-xl text-sm leading-8 text-neutral-600 sm:text-base">
+                  整理目前在做、做過，或之後還想繼續擴充的專案與系統。
                 </p>
+              </div>
 
-                <div className="mt-6 h-24 rounded-2xl border border-dashed border-[#e4ddf8] bg-[#faf8ff]" />
-              </a>
-            ))}
-          </div>
+              <div className="flex flex-wrap gap-2">
+                <span className="rounded-full bg-white/80 px-3 py-1.5 text-xs font-medium text-[#6d60c7] backdrop-blur">
+                  Systems
+                </span>
+                <span className="rounded-full bg-white/80 px-3 py-1.5 text-xs font-medium text-[#6d60c7] backdrop-blur">
+                  Automation
+                </span>
+                <span className="rounded-full bg-white/80 px-3 py-1.5 text-xs font-medium text-[#6d60c7] backdrop-blur">
+                  Archive
+                </span>
+              </div>
+            </div>
+          </a>
+
+          {/* Language */}
+          <a
+            href="/language"
+            className="group relative overflow-hidden rounded-[32px] border border-[#ddd6f3] bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md lg:col-span-5 lg:row-span-2"
+          >
+            <img
+              src="/images/category-language.jpg"
+              alt="Language"
+              className="absolute inset-0 h-full w-full object-cover opacity-[0.55] transition duration-300 group-hover:scale-[1.04]"
+            />
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.88),rgba(238,244,255,0.70))]" />
+
+            <div className="relative flex h-full flex-col justify-between p-7 sm:p-8">
+              <div>
+                <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#7a6ccf]">
+                  Study / Notes
+                </p>
+                <div className="mt-4 flex items-start justify-between gap-4">
+                  <h3 className="text-3xl font-semibold leading-none text-neutral-950 sm:text-4xl">
+                    Language
+                  </h3>
+                  <span className="text-xl text-[#8a79da] transition duration-300 group-hover:translate-x-1">
+                    →
+                  </span>
+                </div>
+                <p className="mt-6 max-w-sm text-sm leading-8 text-neutral-600 sm:text-base">
+                  放日文學習、句型筆記、遊戲裡遇到的表達，以及自己的整理紀錄。
+                </p>
+              </div>
+
+              <div className="flex flex-wrap gap-2">
+                <span className="rounded-full bg-white/80 px-3 py-1.5 text-xs font-medium text-[#5471c6] backdrop-blur">
+                  Japanese
+                </span>
+                <span className="rounded-full bg-white/80 px-3 py-1.5 text-xs font-medium text-[#5471c6] backdrop-blur">
+                  Grammar
+                </span>
+              </div>
+            </div>
+          </a>
+
+          {/* Experience */}
+          <a
+            href="/experience"
+            className="group relative overflow-hidden rounded-[32px] border border-[#ddd6f3] bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md lg:col-span-8 lg:row-span-2"
+          >
+            <img
+              src="/images/category-experience.jpg"
+              alt="Experience"
+              className="absolute inset-0 h-full w-full object-cover opacity-[0.55] transition duration-300 group-hover:scale-[1.04]"
+            />
+            <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(255,255,255,0.2),rgba(248,241,255,0.2))]" />
+
+            <div className="relative flex h-full flex-col justify-between p-7 sm:p-8">
+              <div>
+                <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#7a6ccf]">
+                  Travel / Life / Story
+                </p>
+                <div className="mt-4 flex items-start justify-between gap-4">
+                  <h3 className="text-4xl font-semibold leading-none text-neutral-950 sm:text-5xl">
+                    Experience
+                  </h3>
+                  <span className="text-xl text-[#8a79da] transition duration-300 group-hover:translate-x-1">
+                    →
+                  </span>
+                </div>
+                <p className="mt-6 max-w-xl text-sm leading-8 text-neutral-600 sm:text-base">
+                  收錄旅遊、遊戲、生活趣事，以及想慢慢整理下來的個人經歷與感受。
+                </p>
+              </div>
+
+              <div className="flex flex-wrap gap-2">
+                <span className="rounded-full bg-white/80 px-3 py-1.5 text-xs font-medium text-[#9167c8] backdrop-blur">
+                  Travel
+                </span>
+                <span className="rounded-full bg-white/80 px-3 py-1.5 text-xs font-medium text-[#9167c8] backdrop-blur">
+                  Galgame
+                </span>
+                <span className="rounded-full bg-white/80 px-3 py-1.5 text-xs font-medium text-[#9167c8] backdrop-blur">
+                  Music
+                </span>
+              </div>
+            </div>
+          </a>
+
+          {/* About */}
+          <a
+            href="/about"
+            className="group relative overflow-hidden rounded-[30px] border border-[#ddd6f3] bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md lg:col-span-4 lg:row-span-2"
+          >
+            <img
+              src="/images/category-about.jpg"
+              alt="About"
+              className="absolute inset-0 h-full w-full object-cover opacity-[0.55] transition duration-300 group-hover:scale-[1.04]"
+            />
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.90),rgba(255,247,251,0.78))]" />
+
+            <div className="relative flex h-full flex-col justify-between p-7 sm:p-8">
+              <div>
+                <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#7a6ccf]">
+                  Profile / Info
+                </p>
+                <div className="mt-4 flex items-start justify-between gap-4">
+                  <h3 className="text-3xl font-semibold leading-none text-neutral-950 sm:text-4xl">
+                    About
+                  </h3>
+                  <span className="text-xl text-[#8a79da] transition duration-300 group-hover:translate-x-1">
+                    →
+                  </span>
+                </div>
+                <p className="mt-6 text-sm leading-8 text-neutral-600 sm:text-base">
+                  關於我自己、碰過的東西、目前在做的事，還有這個網站想長成的樣子。
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-white/65 px-4 py-3 text-sm leading-7 text-neutral-700 backdrop-blur">
+                不是單純作品展示，也會慢慢收進個人興趣與記錄。
+              </div>
+            </div>
+          </a>
         </div>
-      </section>
+      </div>
+    </section>
 
       <section className="w-full">
         <div className="mx-auto max-w-7xl px-6 py-12 lg:px-10 lg:py-16">
@@ -235,7 +386,7 @@ export default function HomePage() {
 
             <div className="rounded-[28px] border border-[#ddd6f3] bg-white p-6 shadow-sm sm:p-8">
               <p className="text-sm font-medium uppercase tracking-[0.22em] text-[#7a6ccf]">
-                Game
+                Experience
               </p>
               <h3 className="mt-3 text-2xl font-semibold">遊戲內容預留區</h3>
               <p className="mt-4 text-sm leading-7 text-neutral-600">
