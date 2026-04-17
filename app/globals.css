@@ -24,3 +24,25 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes floatY {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-18px);
+  }
+}
+
+.float-slow {
+  animation: floatY 5s ease-in-out infinite;
+}
+
+.float-slower {
+  animation: floatY 7s ease-in-out infinite;
+}
+
+.float-soft {
+  animation: floatY 6s ease-in-out infinite;
+}
