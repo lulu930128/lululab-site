@@ -49,18 +49,21 @@ export default function HomePage() {
       title: "個人網站持續建置中",
       icon: "wrench",
       status: "In Progress - Build / Personal Site",
+      progress: 50,
     },
     {
       id: "quest-deskpet",
-      title: "AI 桌寵展示頁與內容整理中",
+      title: "AI 桌寵實作中",
       icon: "robot",
-      status: "In Progress - Project / Showcase",
+      status: "In Progress - Project / Build",
+      progress: 20,
     },
     {
       id: "quest-learn",
       title: "日文學習持續進行中 (N3 方向)",
       icon: "brain",
-      status: "In Progress - Study / Language",
+      status: "learning - Study / Language",
+      progress: 40,
     },
   ];
 
@@ -283,12 +286,11 @@ export default function HomePage() {
                   </span>
                   <div>
                     <p className="text-[11px] font-medium uppercase tracking-wider text-neutral-400">Featured Project Intro</p>
-                    <h3 className="mt-1 text-2xl font-semibold text-neutral-900">AI 桌寵演示</h3>
+                    <h3 className="mt-1 text-2xl font-semibold text-neutral-900">AI 桌寵實作 - TTS建置中</h3>
                   </div>
                 </div>
                 <p className="mt-6 text-sm leading-8 text-neutral-600 sm:text-base">
-                  除了影片本身，後面也會慢慢補上功能說明、使用流程，以及我為什麼想做這個方向。
-                  這裡將持續收錄我的任務進度與規劃詳情。
+                  近期預計先將LLM/TTS/皮三條路打通並各自有獨立空間不互相影響
                 </p>
               </div>
 
@@ -307,7 +309,7 @@ export default function HomePage() {
 
                     <div className="flex items-center gap-3 text-xs font-medium text-neutral-500 transition-transform duration-500 group-hover:translate-y-6">
                       <div className={`h-2.5 w-full overflow-hidden rounded-full ${quest.icon === 'wrench' ? 'bg-[#eCeAf4]' : 'bg-[#eef3ff]'} shadow-inner-sm ring-1 ring-neutral-100`}>
-                        <div className={`h-full ${quest.icon === 'wrench' ? 'bg-[#7a6ccf]' : 'bg-[#5471c6]'}`} style={{ width: '45%' }}></div>
+                        <div className={`h-full ${quest.icon === 'wrench' ? 'bg-[#7a6ccf]' : 'bg-[#5471c6]'}`} style={{ width: `${quest.progress}%` }}></div>
                       </div>
                       <span className={`shrink-0 rounded-md px-2 py-1 ${quest.icon === 'wrench' ? 'bg-[#f4f1fb] text-[#6d60c7]' : 'bg-[#eef3ff] text-[#5471c6]'}`}>In Progress</span>
                     </div>
@@ -326,10 +328,10 @@ export default function HomePage() {
                   <h3 className="mb-4 mt-2 text-lg font-semibold text-neutral-950">規劃備註</h3>
                   <div className="grid gap-3">
                     <div className="rounded-xl border border-neutral-100 bg-neutral-50/70 p-4 text-xs font-medium leading-relaxed text-neutral-700 shadow-sm transition hover:bg-neutral-50">
-                      目前先以桌寵展示為主，之後再補上結構、功能與版本差異。
+                      目前先以完整製作網站為主
                     </div>
                     <div className="rounded-xl border border-neutral-100 bg-neutral-50/70 p-4 text-xs font-medium leading-relaxed text-neutral-700 shadow-sm transition hover:bg-neutral-50">
-                      後續可補：系統架構、使用情境、展示截圖、開發紀錄。
+                      同步學習日文並加強AI桌寵功能
                     </div>
                   </div>
                 </div>
