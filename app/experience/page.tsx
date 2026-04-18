@@ -40,7 +40,7 @@ export default function ExperiencePage() {
       image: "images/experience/gal/さくら、もゆ/KURO_e108b.png", 
       tags: ["Story", "Masterpiece"],
       score: "9.5 / 10",
-      playtime: "45 小時",
+      playtime: "103 小時",
       review: "s"
     },
     {
@@ -51,7 +51,7 @@ export default function ExperiencePage() {
       image: "images/experience/gal/星空鉄道とシロの旅/galgame-cover.jpg", 
       tags: ["Story", "Masterpiece"],
       score: "9.5 / 10",
-      playtime: "45 小時",
+      playtime: "24 小時",
       review: "s"
     },
     {
@@ -62,7 +62,7 @@ export default function ExperiencePage() {
       image: "images/experience/gal/桜の詩と刻/藍.png", 
       tags: ["Story", "Masterpiece"],
       score: "9.5 / 10",
-      playtime: "45 小時",
+      playtime: "273 小時",
       review: "s"
     },
     {
@@ -73,7 +73,7 @@ export default function ExperiencePage() {
       image: "images/experience/gal/atri/dump_frames0000010188.png", 
       tags: ["Story", "Masterpiece"],
       score: "9.5 / 10",
-      playtime: "45 小時",
+      playtime: "14 小時",
       review: "s"
     },
   ];
