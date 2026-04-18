@@ -30,9 +30,9 @@ export const categories = [
 ];
 
 export const currentFocus = [
-  { id: "quest-build", title: "個人網站系統建置", icon: "🛠️", status: "Build / Personal Site", progress: 65 },
-  { id: "quest-deskpet", title: "AI 桌寵內容優化", icon: "🤖", status: "Project / Showcase", progress: 25 },
-  { id: "quest-learn", title: "日文 N3 持續進修", icon: "🧠", status: "Study / Language", progress: 55 },
+  { id: "quest-build", title: "個人網站整理與建置", icon: "🛠️", status: "Build / Personal Site", progress: 65 },
+  { id: "quest-deskpet", title: "AI 桌寵系統優化", icon: "🤖", status: "Project / Showcase", progress: 25 },
+  { id: "quest-learn", title: "日文 N3 持續學習", icon: "🧠", status: "Study / Language", progress: 55 },
 ];
 
 export const equipments = [
