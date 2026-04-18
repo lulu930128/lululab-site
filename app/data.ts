@@ -10,7 +10,7 @@ export const categories = [
     title: "Language",
     description: "放日文學習、句型筆記、遊戲裡遇到的表達，以及自己的整理紀錄。",
     href: "/language",
-    image: "/images/main/category-language.jpg",
+    image: "/images/main/category-language.png",
     tags: ["Japanese", "Grammar"],
   },
   {
@@ -24,7 +24,7 @@ export const categories = [
     title: "About",
     description: "關於我自己、碰過的東西、目前在做的事，還有這個網站想長成的樣子。",
     href: "/about",
-    image: "/images/main/category-about.jpg",
+    image: "/images/main/category-about.png",
     tags: ["Identity", "Roadmap"],
   },
 ];
