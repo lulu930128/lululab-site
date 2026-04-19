@@ -166,6 +166,61 @@ export const galgameData: ExperienceItem[] = [
     playtime: "20 小時",
     review: ""
   },
+  {
+  id: "g13",
+  title: "蒼の彼方のフォーリズム",
+  developer: "sprite",
+  description: "",
+  image: "images/experience/gal/蒼の彼方のフォーリズム/cover.png",
+  tags: ["Moe", "Sports"],
+  score: "",
+  playtime: "35 小時",
+  review: ""
+},
+{
+  id: "g14",
+  title: "サノバウィッチ",
+  developer: "ゆずソフト",
+  description: "",
+  image: "images/experience/gal/サノバウィッチ/cover.png",
+  tags: ["Moe", "School", "Romance"],
+  score: "",
+  playtime: "30 小時",
+  review: ""
+},
+{
+  id: "g15",
+  title: "千恋＊万花",
+  developer: "ゆずソフト",
+  description: "",
+  image: "images/experience/gal/千恋＊万花/cover.png",
+  tags: ["Moe", "Romance"],
+  score: "",
+  playtime: "35 小時",
+  review: ""
+},
+{
+  id: "g16",
+  title: "恋×シンアイ彼女",
+  developer: "Us:track",
+  description: "",
+  image: "images/experience/gal/恋×シンアイ彼女/cover.png",
+  tags: ["Moe", "Romance", "School"],
+  score: "",
+  playtime: "18 小時",
+  review: ""
+},
+{
+  id: "g17",
+  title: "糖調！",
+  developer: "ねこねこソフト",
+  description: "",
+  image: "images/experience/gal/糖調！/cover.png",
+  tags: ["Moe", "Sweet", "Romance"],
+  score: "",
+  playtime: "12 小時",
+  review: ""
+},
 ];
 
 export const generalGameData: ExperienceItem[] = [
