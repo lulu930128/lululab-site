@@ -29,7 +29,16 @@ export default function ExperienceModal({ item, onClose }: ModalProps) {
           </div>
 
           <div className="px-8 pb-10 pt-4 sm:px-10">
-            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#8a79da] bg-[#f4f1fb] px-3 py-1 rounded-full">Archive Record</span>
+            
+            {/* 🌸 把原本固定的文字換成了標籤陣列 */}
+            <div className="flex flex-wrap gap-2">
+              {item.tags?.map((tag) => (
+                <span key={tag} className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#8a79da] bg-[#f4f1fb] px-3 py-1 rounded-full">
+                  {tag}
+                </span>
+              ))}
+            </div>
+
             <h2 className="mt-3 text-3xl font-bold text-neutral-900">{item.title}</h2>
             
             {/* 數據小卡對齊 Projects 樣式 */}

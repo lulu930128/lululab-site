@@ -4,7 +4,7 @@ import { equipments } from "../data";
 export default function LifestyleSection() {
   return (
     <section id="lifestyle" className="flex flex-col gap-6 scroll-mt-24">
-      <div className="flex items-end justify-between px-2"><div><p className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#8a79da]">Lifestyle & Gears</p><h2 className="mt-2 text-3xl font-bold text-neutral-900">日常道具與調劑</h2></div><span className="mb-1 text-[11px] font-medium tracking-wider text-neutral-400 uppercase font-mono">Scroll ↔</span></div>
+      <div className="flex items-end justify-between px-2"><div><p className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#8a79da]">LIFESTYLE COLLECTION</p><h2 className="mt-2 text-3xl font-bold text-neutral-900">生活興趣與收藏</h2></div><span className="mb-1 text-[11px] font-medium tracking-wider text-neutral-400 uppercase font-mono">Scroll ↔</span></div>
       <div className="flex w-full snap-x snap-mandatory gap-4 overflow-x-auto pb-6 pt-2" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
         <style dangerouslySetInnerHTML={{__html: `::-webkit-scrollbar { display: none; }`}} />
         {equipments.map((item, idx) => (

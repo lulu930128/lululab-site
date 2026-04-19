@@ -7,6 +7,25 @@ import { travelData, galgameData, generalGameData, ExperienceItem } from "./data
 
 export default function ExperiencePage() {
   const [selectedItem, setSelectedItem] = useState<ExperienceItem | null>(null);
+  
+  // --- 🌸 新增：Galgame 分類過濾狀態 ---
+  const [galgameFilter, setGalgameFilter] = useState("全部");
+
+  // 中文標籤與 data.ts 英文 Tags 的映射表
+  const filterMapping: Record<string, string> = {
+    "全部": "All",
+    "催淚向": "Sad",
+    "廢萌": "Moe",
+    "大推作": "Masterpiece"
+  };
+
+  // 根據目前選擇的標籤過濾資料
+  const filteredGalgame = galgameData.filter(item => {
+    const activeTag = filterMapping[galgameFilter];
+    if (activeTag === "All") return true;
+    // 👇 這裡加上 ? 防止報錯黑屏
+    return item.tags?.includes(activeTag);
+  });
 
   return (
     <>
@@ -23,7 +42,7 @@ export default function ExperiencePage() {
 
         <div className="mx-auto max-w-[1200px] px-6 py-10 lg:px-10 lg:py-16">
           
-          {/* Hero Section (頭部區塊) [cite: 16, 75] */}
+          {/* Hero Section (頭部區塊) */}
           <section className="mb-24 flex flex-col justify-between rounded-[2rem] border border-[#eCeAf4] bg-white/70 p-8 shadow-[0_8px_30px_rgb(120,100,180,0.04)] backdrop-blur-md sm:p-10 lg:flex-row lg:items-end">
             <div className="max-w-2xl">
               <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#8a79da]">
@@ -46,7 +65,7 @@ export default function ExperiencePage() {
 
           <div className="space-y-32">
 
-            {/* 1. TRAVEL 旅遊區塊 [cite: 75] */}
+            {/* 1. TRAVEL 旅遊區塊 */}
             <section id="travel" className="scroll-mt-32">
               <div className="mb-8 flex items-center gap-4">
                 <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 text-2xl text-blue-500">✈️</span>
@@ -63,24 +82,51 @@ export default function ExperiencePage() {
               </div>
             </section>
 
-            {/* 2. GALGAME 區塊 [cite: 75] */}
+            {/* 2. GALGAME 區塊 (包含新的分類按鈕) */}
             <section id="galgame" className="scroll-mt-32">
-              <div className="mb-8 flex items-center gap-4">
-                <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-pink-50 text-2xl text-pink-500">🌸</span>
-                <div>
-                  <h2 className="text-3xl font-semibold text-neutral-900">Galgame</h2>
-                  <p className="mt-1 text-sm font-medium text-neutral-500">作品短評與紀錄</p>
+              <div className="mb-8 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+                <div className="flex items-center gap-4">
+                  <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-pink-50 text-2xl text-pink-500">🌸</span>
+                  <div>
+                    <h2 className="text-3xl font-semibold text-neutral-900">Galgame</h2>
+                    <p className="mt-1 text-sm font-medium text-neutral-500">作品短評與紀錄</p>
+                  </div>
+                </div>
+
+                {/* 🌸 分類按鈕 (毛玻璃膠囊風格) */}
+                <div className="flex flex-wrap gap-2 rounded-full bg-white/60 p-1.5 shadow-sm border border-neutral-100 backdrop-blur-md">
+                  {["全部", "催淚向", "廢萌", "大推作"].map(f => (
+                    <button 
+                      key={f} 
+                      onClick={() => setGalgameFilter(f)} 
+                      className={`rounded-full px-4 py-1.5 text-xs font-semibold transition-all ${
+                        galgameFilter === f 
+                          ? 'bg-[#7a6ccf] text-white shadow-md' 
+                          : 'text-neutral-500 hover:bg-neutral-100'
+                      }`}
+                    >
+                      {f}
+                    </button>
+                  ))}
                 </div>
               </div>
 
+              {/* 渲染過濾後的資料 */}
               <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-                {galgameData.map((item) => (
+                {filteredGalgame.map((item) => (
                   <ExperienceCard key={item.id} item={item} type="grid" onClick={setSelectedItem} />
                 ))}
+                
+                {/* 當沒有符合該分類的遊戲時的提示 */}
+                {filteredGalgame.length === 0 && (
+                  <div className="col-span-2 py-12 text-center rounded-[2.5rem] border border-dashed border-neutral-200 bg-white/30">
+                    <p className="text-sm font-medium text-neutral-400">目前此分類還沒有收錄作品哦！</p>
+                  </div>
+                )}
               </div>
             </section>
 
-            {/* 3. GAME 區塊 [cite: 75] */}
+            {/* 3. GAME 區塊 */}
             <section id="game" className="scroll-mt-32">
               <div className="mb-8 flex items-center gap-4">
                 <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-50 text-2xl text-emerald-500">🎮</span>
@@ -99,15 +145,15 @@ export default function ExperiencePage() {
 
           </div>
           
-          {/* Footer (頁尾區塊) [cite: 75] */}
+          {/* Footer (頁尾區塊) */}
           <footer className="mt-32 border-t border-neutral-100/60 pb-6 pt-8 text-center text-xs text-neutral-400">
-            <p>© {new Date().getFullYear()} Lulu. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Lulu星. All rights reserved.</p>
           </footer>
 
         </div>
       </main>
 
-      {/* 彈出視窗組件 [cite: 15, 40] */}
+      {/* 彈出視窗組件 */}
       <ExperienceModal item={selectedItem} onClose={() => setSelectedItem(null)} />
     </>
   );

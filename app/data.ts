@@ -1,7 +1,7 @@
 export const categories = [
   {
     title: "Projects",
-    description: "整理目前在做、做過，或之後還想繼續擴充的專案與系統。",
+    description: "整理目前在做、做過，或之後還想繼續延伸的專案與系統",
     href: "/projects",
     image: "/images/main/category-projects.jpg",
     tags: ["Systems", "AI Design", "Automation"],
@@ -22,7 +22,7 @@ export const categories = [
   },
   {
     title: "About",
-    description: "關於我自己、碰過的東西、目前在做的事，還有這個網站想長成的樣子。",
+    description: "關於我自己、碰過的東西、目前在做的事，還有這個網站慢慢成長的樣子",
     href: "/about",
     image: "/images/main/category-about.png",
     tags: ["Identity", "Roadmap"],

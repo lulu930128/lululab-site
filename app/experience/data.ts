@@ -37,10 +37,10 @@ export const galgameData: ExperienceItem[] = [
   {
       id: "g1",
       title: "さくら、もゆ",
-      developer: "Favorite社",
+      developer: "Favorite",
       description: "收錄玩過的作品、喜歡的題材、角色與劇情，以及那些真的有留下印象的內容。",
       image: "images/experience/gal/さくら、もゆ/KURO_e108b.png", 
-      tags: ["Story", "Masterpiece"],
+      tags: ["Sad", "Masterpiece"],
       score: "9.5 / 10",
       playtime: "103 小時",
       review: "s"
@@ -51,7 +51,7 @@ export const galgameData: ExperienceItem[] = [
       developer: "しらたまこ",
       description: "收錄玩過的作品、喜歡的題材、角色與劇情，以及那些真的有留下印象的內容。",
       image: "images/experience/gal/星空鉄道とシロの旅/galgame-cover.jpg", 
-      tags: ["Story", "Masterpiece"],
+      tags: ["Sad","Short", "Masterpiece"],
       score: "9.5 / 10",
       playtime: "24 小時",
       review: "s"
@@ -62,7 +62,7 @@ export const galgameData: ExperienceItem[] = [
       developer: "枕",
       description: "收錄玩過的作品、喜歡的題材、角色與劇情，以及那些真的有留下印象的內容。",
       image: "images/experience/gal/桜の詩と刻/藍.png", 
-      tags: ["Story", "Masterpiece"],
+      tags: ["Sad","Literature", "Masterpiece"],
       score: "9.5 / 10",
       playtime: "273 小時",
       review: "s"
@@ -73,11 +73,99 @@ export const galgameData: ExperienceItem[] = [
       developer: "FrontWing、枕",
       description: "收錄玩過的作品、喜歡的題材、角色與劇情，以及那些真的有留下印象的內容。",
       image: "images/experience/gal/atri/dump_frames0000010188.png", 
-      tags: ["Story", "Masterpiece"],
+      tags: ["Sad","Short", "Masterpiece"],
       score: "9.5 / 10",
       playtime: "14 小時",
       review: "s"
     },
+    {
+    id: "g5",
+    title: "9-nine-",
+    developer: "ぱれっと",
+    description: "",
+    image: "images/experience/gal/9nine/cover.png",
+    tags: ["Moe","Music","Mystery"],
+    score: "",
+    playtime: "45 小時",
+    review: ""
+  },
+  {
+    id: "g6",
+    title: "Summer Pockets",
+    developer: "Key",
+    description: "",
+    image: "images/experience/gal/Summer Pockets/cover.png",
+    tags: ["Sad", "Summer"],
+    score: "",
+    playtime: "55 小時",
+    review: ""
+  },
+  {
+    id: "g7",
+    title: "アストラエアの白き永遠",
+    developer: "FAVORITE",
+    description: "",
+    image: "images/experience/gal/アストラエアの白き永遠/cover.png",
+    tags: ["Sad", "Fantasy"],
+    score: "",
+    playtime: "40 小時",
+    review: ""
+  },
+  {
+    id: "g8",
+    title: "星空のメモリア",
+    developer: "FAVORITE",
+    description: "",
+    image: "images/experience/gal/星空のメモリア/cover.png",
+    tags: ["Sad", "Starry Sky"],
+    score: "",
+    playtime: "35 小時",
+    review: ""
+  },
+  {
+    id: "g9",
+    title: "初雪櫻",
+    developer: "SAGA PLANETS",
+    description: "",
+    image: "images/experience/gal/hatsuyuki/cover.png",
+    tags: ["Sad", "Winter"],
+    score: "",
+    playtime: "30 小時",
+    review: ""
+  },
+  {
+    id: "g10",
+    title: "さくらの雲＊スカアレットの恋",
+    developer: "きゃべつそふと",
+    description: "",
+    image: "images/experience/gal/さくらの雲＊スカアレットの恋/cover.png",
+    tags: ["Mystery", "Romance"],
+    score: "",
+    playtime: "35 小時",
+    review: ""
+  },
+  {
+    id: "g11",
+    title: "いろとりどりのセカイ",
+    developer: "FAVORITE",
+    description: "",
+    image: "images/experience/gal/いろとりどりのセカイ/cover.png",
+    tags: ["Sad", "Fantasy"],
+    score: "",
+    playtime: "38 小時",
+    review: ""
+  },
+  {
+    id: "g12",
+    title: "枯れない世界と終わる花",
+    developer: "SWEET&TEA",
+    description: "",
+    image: "images/experience/gal/枯れない世界と終わる花/cover.png",
+    tags: ["Short", "Sad", "Fantasy"],
+    score: "",
+    playtime: "20 小時",
+    review: ""
+  },
 ];
 
 export const generalGameData: ExperienceItem[] = [

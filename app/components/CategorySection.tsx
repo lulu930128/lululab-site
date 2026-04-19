@@ -6,8 +6,8 @@ export default function CategorySection() {
   return (
     <section id="categories" className="flex flex-col gap-8 scroll-mt-24">
       <div className="px-2">
-        <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-[#8a79da]">Main Architecture</p>
-        <h2 className="mt-2 text-3xl font-black text-neutral-900 tracking-tight">主分類入口</h2>
+        <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-[#8a79da]">MAIN CATEGORIES</p>
+        <h2 className="mt-2 text-3xl font-black text-neutral-900 tracking-tight">分類入口</h2>
       </div>
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-12">
