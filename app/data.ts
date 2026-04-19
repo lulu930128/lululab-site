@@ -29,10 +29,40 @@ export const categories = [
   },
 ];
 
-export const currentFocus = [
-  { id: "quest-build", title: "個人網站整理與建置", icon: "🛠️", status: "Build / Personal Site", progress: 65 },
-  { id: "quest-deskpet", title: "AI 桌寵系統優化", icon: "🤖", status: "Project / Showcase", progress: 25 },
-  { id: "quest-learn", title: "日文 N3 持續學習", icon: "🧠", status: "Study / Language", progress: 55 },
+export const currentFocusData = [
+  {
+    id: "quest-build",
+    title: "個人網站整理與建置",
+    icon: "🛠️",
+    summary: "整理首頁架構與後續子頁內容，逐步建立完整的作品入口。",
+    current: "目前先把首頁、展示區與主要入口整理穩定，讓整體結構先成形。",
+    next: "後續補上 Projects、Language、Experience、About 等子頁內容，逐步把網站內容整理完整。",
+    stage: "首頁整理中",
+    progress: 65,
+    image: "/images/main/focus/site-cover.png",
+  },
+  {
+  id: "quest-deskpet",
+  title: "AI 桌寵系統優化",
+  icon: "🤖",
+  summary: "持續修整桌寵展示、互動體驗與作品呈現方式。",
+  current: "目前先以展示版本為主，優先整理內容呈現、互動體驗與作品說明。",
+  next: "後續補充系統架構、使用情境、展示截圖與開發紀錄。",
+  stage: "展示優化中",
+  progress: 25,
+  image: "/images/main/focus/deskpet-cover.jpg",
+  },
+  {
+    id: "quest-learn",
+    title: "日文 N3 持續學習",
+    icon: "🧠",
+    summary: "維持文法、單字與閱讀訓練，穩定累積日文能力。",
+    current: "目前以 N3 文法、單字與閱讀理解作為主要累積方向，維持穩定的學習節奏。",
+    next: "後續會再結合作品閱讀、輸出練習與更高程度內容，慢慢往上銜接。",
+    stage: "穩定累積中",
+    progress: 55,
+    image: "",
+  },
 ];
 
 export const equipments = [
