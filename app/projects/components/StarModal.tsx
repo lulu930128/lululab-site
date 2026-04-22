@@ -48,31 +48,6 @@ export default function StarModal({ project, onClose }: StarModalProps) {
               ))}
             </div>
 
-            {/* STAR 內容 或 開發心得 */}
-            <div className="space-y-4">
-              {project.star ? (
-                <>
-                  <div className="p-6 rounded-2xl bg-emerald-50/50 border border-emerald-100/50">
-                    <h4 className="text-[10px] font-bold text-emerald-600 uppercase tracking-widest mb-2 flex items-center gap-2"><span>S</span> Situation</h4>
-                    <p className="text-sm text-neutral-600 leading-relaxed font-medium">{project.star.situation}</p>
-                  </div>
-                  <div className="p-6 rounded-2xl bg-indigo-50/50 border border-indigo-100/50">
-                    <h4 className="text-[10px] font-bold text-indigo-600 uppercase tracking-widest mb-2 flex items-center gap-2"><span>A</span> Action</h4>
-                    <p className="text-sm text-neutral-600 leading-relaxed font-medium">{project.star.action}</p>
-                  </div>
-                  <div className="p-6 rounded-2xl bg-purple-50/50 border border-purple-100/50">
-                    <h4 className="text-[10px] font-bold text-purple-600 uppercase tracking-widest mb-2 flex items-center gap-2"><span>R</span> Result</h4>
-                    <p className="text-sm text-neutral-600 leading-relaxed font-medium">{project.star.result}</p>
-                  </div>
-                </>
-              ) : (
-                <div className="p-6 rounded-2xl bg-neutral-50 border border-neutral-100 shadow-inner">
-                  <h4 className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest mb-3 flex items-center gap-2">💡 開發細節與心得</h4>
-                  <p className="text-sm leading-relaxed text-neutral-600 font-medium whitespace-pre-wrap">{project.review || project.description}</p>
-                </div>
-              )}
-            </div>
-
             {/* 技術棧與按鈕 */}
             <div className="pt-4 border-t border-neutral-100 flex flex-wrap gap-2">
               {project.techStack?.map(t => (
