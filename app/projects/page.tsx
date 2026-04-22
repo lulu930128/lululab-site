@@ -39,11 +39,11 @@ export default function ProjectsPage() {
             className="relative flex flex-col justify-between overflow-hidden rounded-[2.5rem] border border-white/50 bg-white/60 p-8 shadow-sm backdrop-blur-md sm:p-12 lg:col-span-7"
           >
             <div className="relative z-10">
-              <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-[#8a79da]">Projects / Portfolio</p>
+              <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-[#8a79da]">PROJECTS & RESEARCH DIRECTION</p>
               
               {/* 大標題 */}
               <h1 className="mt-6 text-4xl font-extrabold leading-[1.1] text-neutral-950 sm:text-5xl lg:text-[64px]">
-                專案展示與<br/>系統開發
+                從實作專案<br/>走向 AI 互動研究
               </h1>
               
               {/* 中間簡短說明 */}
@@ -51,44 +51,36 @@ export default function ProjectsPage() {
                 <div className="group flex items-start gap-4">
                   <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#f4f1fb] text-[10px] font-bold text-[#7a6ccf]">1</span>
                   <p className="text-sm text-neutral-600 leading-relaxed">
-                    <strong className="text-neutral-900">核心開發：</strong>
-                    [在這裡填寫你的第一個介紹點，例如：專注於高併發後端架構...]
+                    <strong className="text-neutral-900">研究主軸:</strong>
+                    專案主要圍繞在 AI 應用整合、互動系統設計與角色化介面實作，並以可運作的原型作為研究方向的延伸基礎
                   </p>
                 </div>
                 <div className="group flex items-start gap-4">
                   <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#f4f1fb] text-[10px] font-bold text-[#7a6ccf]">2</span>
                   <p className="text-sm text-neutral-600 leading-relaxed">
-                    <strong className="text-neutral-900">技術整合：</strong>
-                    [在這裡填寫第二個亮點，例如：將 AI 情緒模型與硬體端對接...]
+                    <strong className="text-neutral-900">技術方法:</strong>
+                    實作上以 LLM、TTS、前後端整合與模組化流程設計為核心，逐步驗證互動邏輯、系統穩定性與使用情境
                   </p>
                 </div>
                 <div className="group flex items-start gap-4">
                   <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#f4f1fb] text-[10px] font-bold text-[#7a6ccf]">3</span>
                   <p className="text-sm text-neutral-600 leading-relaxed">
-                    <strong className="text-neutral-900">未來展望：</strong>
-                    [在這裡填寫第三個計畫，例如：持續優化邊緣計算效能...]
+                    <strong className="text-neutral-900">長期方向:</strong>
+                    研究重點延伸到情感互動、陪伴型介面與更自然的人機交流形式，探索 AI 在情緒理解與角色互動中的可能性
                   </p>
                 </div>
               </div>
               
               {/* 功能膠囊 (Capsules) */}
-              <div className="mt-12 grid gap-5 sm:grid-cols-2">
-                <div className="rounded-3xl border border-white/80 bg-white/40 p-6 shadow-sm backdrop-blur-sm transition hover:shadow-md">
-                  <div className="mb-3 flex items-center gap-2 text-[#7a6ccf] font-bold text-sm">
-                    <span className="text-base">🧠</span> AI 整合與應用
-                  </div>
-                  <p className="text-[11px] text-neutral-500 leading-relaxed font-medium">
-                    專精 LLM 串接、TTS 與桌寵開發。獨立建構具情緒互動能力的創新系統。
-                  </p>
+              <div className="mt-10 rounded-[1.5rem] border border-[#eceaf4] bg-white/35 px-6 py-5 shadow-sm backdrop-blur-sm">
+                <div className="flex items-center gap-2 text-[10px] font-semibold uppercase tracking-[0.28em] text-[#8a79da]">
+                  <span className="h-2 w-2 rounded-full bg-[#8a79da]" />
+                  Primary Showcase
                 </div>
-                <div className="rounded-3xl border border-white/80 bg-white/40 p-6 shadow-sm backdrop-blur-sm transition hover:shadow-md">
-                  <div className="mb-3 flex items-center gap-2 text-emerald-500 font-bold text-sm">
-                    <span className="text-base">⚡</span> 自動化腳本製作
-                  </div>
-                  <p className="text-[11px] text-neutral-500 leading-relaxed font-medium">
-                    熟練 Python 與 BAT。開發多項廠端機台自動化報表與高效率數據處理流程。
-                  </p>
-                </div>
+
+                <p className="mt-4 text-[14px] leading-7 text-neutral-500">
+                  以下將以 AI 互動桌寵系統作為主要展示案例，進一步展開目前的核心實作與技術架構。
+                </p>
               </div>
             </div>
 
