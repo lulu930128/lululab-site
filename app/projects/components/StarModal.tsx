@@ -37,7 +37,7 @@ export default function StarModal({ project, onClose }: StarModalProps) {
               <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#8a79da] bg-[#f4f1fb] px-3 py-1 rounded-full">Development Insight</span>
               <h2 className="mt-3 text-3xl font-bold text-neutral-900 leading-tight">{project.title}</h2>
             </div>
-
+            
             {/* 數據看板 */}
             <div className="grid grid-cols-2 gap-4">
               {project.stats?.map((s) => (
