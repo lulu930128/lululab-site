@@ -144,6 +144,31 @@ export default function WineAtlasPage() {
             />
           )}
         </section>
+
+        <section className="mt-16 rounded-[34px] border border-white/70 bg-white/65 p-8 shadow-[0_20px_70px_rgba(35,20,30,0.06)] backdrop-blur-md">
+          <p className="text-xs font-semibold uppercase tracking-[0.32em] text-rose-400">
+            Project Note
+          </p>
+
+          <h2 className="mt-3 text-2xl font-black text-neutral-950">
+            Local-first Wine Data System
+          </h2>
+
+          <div className="mt-4 grid gap-5 text-sm leading-7 text-neutral-600 md:grid-cols-2">
+            <p>
+              這個頁面由本地 SQLite 資料庫與 Tkinter 管理工具維護。
+              網站端只讀取匯出的 public JSON，因此能保留私有資料在本機，
+              同時讓 Wine Atlas 以靜態頁面部署到 Next.js / Vercel。
+            </p>
+
+            <p>
+              The Wine Atlas is managed through a local SQLite database and a
+              Tkinter-based desktop tool. The public website only consumes exported
+              JSON data, keeping private records local while preserving a static and
+              deployable frontend.
+            </p>
+          </div>
+        </section>
       </section>
     </main>
   );
