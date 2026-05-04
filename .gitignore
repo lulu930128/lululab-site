@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Wine Atlas local database
+tools/wine-atlas/data/*.db
+tools/wine-atlas/data/*.db-shm
+tools/wine-atlas/data/*.db-wal
+
+# Wine Atlas private exports / local images
+tools/wine-atlas/exports/
+tools/wine-atlas/private_images/

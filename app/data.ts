@@ -66,8 +66,32 @@ export const currentFocusData = [
 ];
 
 export const equipments = [
-  { icon: "🍸", title: "Bartending", desc: "Mixology", detail: "液體間的比例實驗" },
-  { icon: "☕", title: "Coffee", desc: "Brewing", detail: "日常精神糧食" },
-  { icon: "🍵", title: "Tea", desc: "Aroma", detail: "感受茶葉舒展的平靜時刻" },
-  { icon: "⌨️", title: "Tech Gears", desc: "Devices", detail: "桌面設備收藏" },
+  {
+    icon: "🍷",
+    title: "Cellar",
+    desc: "Wine Atlas",
+    detail: "把喝過的酒變成探索地圖",
+    href: "/lifestyle/cellar/wine-atlas",
+  },
+  {
+    icon: "☕",
+    title: "Coffee",
+    desc: "Brewing",
+    detail: "日常精神糧食",
+    href: "#",
+  },
+  {
+    icon: "🍵",
+    title: "Tea",
+    desc: "Aroma",
+    detail: "感受茶葉舒展的平靜時刻",
+    href: "#",
+  },
+  {
+    icon: "⌨️",
+    title: "Tech Gears",
+    desc: "Devices",
+    detail: "桌面設備收藏",
+    href: "#",
+  },
 ];

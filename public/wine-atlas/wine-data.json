@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "projectName": "Wine Atlas",
+    "description": "A personal wine cellar map powered by tasting records.",
+    "version": "0.1.0",
+    "updatedAt": "2026-05-04"
+  },
+  "countries": [
+    {
+      "code": "FRA",
+      "name": "France",
+      "displayName": "France",
+      "wineCount": 2,
+      "averageRating": 4.4,
+      "topWineId": "wine-001",
+      "regions": [
+        "Bordeaux"
+      ]
+    }
+  ],
+  "wines": [
+    {
+      "id": "wine-002",
+      "name": "Test Wine",
+      "winery": "Lulu Cellar",
+      "country": "France",
+      "countryCode": "FRA",
+      "region": "Bordeaux",
+      "vintage": 2020,
+      "type": "red",
+      "grapes": [
+        "Cabernet Sauvignon",
+        "Merlot"
+      ],
+      "rating": 4.2,
+      "priceTwd": 850,
+      "tastedDate": "2026-05-04",
+      "tags": [
+        "推薦",
+        "可回購",
+        "配肉"
+      ],
+      "recommend": true,
+      "repurchase": false,
+      "note": "第一筆正式測試資料。",
+      "image": null
+    },
+    {
+      "id": "wine-001",
+      "name": "Château Lumière Rouge",
+      "winery": "Château Lumière",
+      "country": "France",
+      "countryCode": "FRA",
+      "region": "Bordeaux",
+      "vintage": 2018,
+      "type": "red",
+      "grapes": [
+        "Cabernet Sauvignon",
+        "Merlot"
+      ],
+      "rating": 4.6,
+      "priceTwd": 980,
+      "tastedDate": "2026-05-04",
+      "tags": [
+        "推薦",
+        "可回購",
+        "配肉"
+      ],
+      "recommend": true,
+      "repurchase": false,
+      "note": "黑醋栗、橡木與些微皮革感，酒體中高，尾韻不錯。",
+      "image": null
+    }
+  ]
+}

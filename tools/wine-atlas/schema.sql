@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS wines (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    winery TEXT,
+    country TEXT NOT NULL,
+    country_code TEXT NOT NULL,
+    region TEXT,
+    vintage INTEGER,
+    type TEXT NOT NULL DEFAULT 'red',
+    grapes TEXT,
+    rating REAL,
+    price_twd INTEGER,
+    tasted_date TEXT,
+    tags TEXT,
+    recommend INTEGER NOT NULL DEFAULT 0,
+    repurchase INTEGER NOT NULL DEFAULT 0,
+    note TEXT,
+    image TEXT,
+    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
