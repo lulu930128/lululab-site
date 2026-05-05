@@ -7,68 +7,38 @@
   },
   "countries": [
     {
-      "code": "FRA",
-      "name": "France",
-      "displayName": "France",
-      "wineCount": 2,
-      "averageRating": 4.4,
+      "code": "ITA",
+      "name": "Italy",
+      "displayName": "Italy",
+      "wineCount": 1,
+      "averageRating": 3.3,
       "topWineId": "wine-001",
       "regions": [
-        "Bordeaux"
+        "Castiglione delle Stiviere / Lombardia"
       ]
     }
   ],
   "wines": [
     {
-      "id": "wine-002",
-      "name": "Test Wine",
-      "winery": "Lulu Cellar",
-      "country": "France",
-      "countryCode": "FRA",
-      "region": "Bordeaux",
-      "vintage": 2020,
-      "type": "red",
-      "grapes": [
-        "Cabernet Sauvignon",
-        "Merlot"
-      ],
-      "rating": 4.2,
-      "priceTwd": 850,
-      "tastedDate": "2026-05-04",
-      "tags": [
-        "推薦",
-        "可回購",
-        "配肉"
-      ],
-      "recommend": true,
-      "repurchase": false,
-      "note": "第一筆正式測試資料。",
-      "image": null
-    },
-    {
       "id": "wine-001",
-      "name": "Château Lumière Rouge",
-      "winery": "Château Lumière",
-      "country": "France",
-      "countryCode": "FRA",
-      "region": "Bordeaux",
-      "vintage": 2018,
+      "name": "Terre di Sera Vino Rosso",
+      "winery": "Progetti Agricoli S.R.L.",
+      "country": "Italy",
+      "countryCode": "ITA",
+      "region": "Castiglione delle Stiviere / Lombardia",
+      "vintage": null,
       "type": "red",
-      "grapes": [
-        "Cabernet Sauvignon",
-        "Merlot"
-      ],
-      "rating": 4.6,
-      "priceTwd": 980,
+      "grapes": [],
+      "rating": 3.3,
+      "priceTwd": 259,
       "tastedDate": "2026-05-04",
       "tags": [
-        "推薦",
-        "可回購",
-        "配肉"
+        "日常紅酒",
+        "入門"
       ],
       "recommend": true,
       "repurchase": false,
-      "note": "黑醋栗、橡木與些微皮革感，酒體中高，尾韻不錯。",
+      "note": "口感偏酸，需要充分醒酒後才會有香味\n以便宜紅酒個來說算性價比很高的一支\n但風味算是非常普通",
       "image": null
     }
   ]

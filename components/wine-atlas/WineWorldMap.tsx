@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-
+import WineMapLegend from "./WineMapLegend";
 import type { WineCountrySummary } from "../../types/wine-atlas";
 import {
   getCountryFill,
@@ -213,8 +213,11 @@ export default function WineWorldMap({ countries }: WineWorldMapProps) {
   }
 
   return (
-    <div className="relative overflow-hidden rounded-[30px] border border-white/10 bg-[#0f0a10] p-4">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_45%,rgba(216,90,118,0.16),transparent_45%)]" />
+    <div className="relative overflow-hidden rounded-[30px] border border-rose-100/20 bg-[#211821] p-4 shadow-[inset_0_0_80px_rgba(255,255,255,0.035)]">
+      <div className="pointer-events-none absolute bottom-5 left-5 z-20 hidden md:block">
+        <WineMapLegend />
+      </div>
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_45%,rgba(229,109,135,0.20),transparent_50%)]" />
 
       {hoveredCountry && (
         <div className="absolute left-5 top-5 z-20 max-w-[280px] rounded-2xl border border-white/10 bg-[#1c141b]/95 p-4 shadow-[0_20px_60px_rgba(0,0,0,0.35)] backdrop-blur-md">

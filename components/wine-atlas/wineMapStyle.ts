@@ -11,14 +11,14 @@ export type WineMapLegendItem = {
 };
 
 export const wineMapColors = {
-  unexplored: "#181218",
-  level1: "#5A2636",
-  level2: "#9F334F",
-  level3: "#D85A76",
+  unexplored: "#2A232B",
+  level1: "#7A3448",
+  level2: "#B94463",
+  level3: "#E56D87",
   gold: "#D8A94A",
-  stroke: "#2C2028",
-  softStroke: "rgba(255,255,255,0.12)",
-  fog: "rgba(10, 7, 10, 0.72)",
+  stroke: "#4A3C45",
+  softStroke: "rgba(255,255,255,0.16)",
+  fog: "rgba(22, 16, 22, 0.58)",
 };
 
 export function getWineMapLevel(wineCount: number): WineMapLevel {
