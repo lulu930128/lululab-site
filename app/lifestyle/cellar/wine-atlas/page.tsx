@@ -90,7 +90,7 @@ export default function WineAtlasPage() {
         <WineStatsPanel stats={stats} />
 
         <div className="mt-8">
-          <WineMap countries={data.countries} />
+          <WineMap countries={data.countries} wines={data.wines} />
         </div>
 
           <section className="mt-12">

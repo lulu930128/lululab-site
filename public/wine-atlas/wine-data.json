@@ -3,9 +3,20 @@
     "projectName": "Wine Atlas",
     "description": "A personal wine cellar map powered by tasting records.",
     "version": "0.1.0",
-    "updatedAt": "2026-05-04"
+    "updatedAt": "2026-05-05"
   },
   "countries": [
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "displayName": "Spain",
+      "wineCount": 1,
+      "averageRating": 3.7,
+      "topWineId": "wine-003",
+      "regions": [
+        "Castilla-La Mancha"
+      ]
+    },
     {
       "code": "ITA",
       "name": "Italy",
@@ -19,6 +30,29 @@
     }
   ],
   "wines": [
+    {
+      "id": "wine-003",
+      "name": "Raices Cabernet Sauvignon Selected Harvest",
+      "winery": "Raices",
+      "country": "Spain",
+      "countryCode": "ESP",
+      "region": "Castilla-La Mancha",
+      "vintage": null,
+      "type": "red",
+      "grapes": [
+        "100% Cabernet Sauvignon"
+      ],
+      "rating": 3.7,
+      "priceTwd": 299,
+      "tastedDate": "2026-05-05",
+      "tags": [
+        "Daily Wine"
+      ],
+      "recommend": true,
+      "repurchase": false,
+      "note": "來自西班牙的日常系 Cabernet Sauvignon。\n以成熟紅果香為主，帶微微酸度與柔順口感，整體平衡不厚重，適合放鬆時慢慢喝的一支入門紅酒。",
+      "image": null
+    },
     {
       "id": "wine-001",
       "name": "Terre di Sera Vino Rosso",
