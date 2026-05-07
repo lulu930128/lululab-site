@@ -1,4 +1,6 @@
 import type { WineCountrySummary, WineItem } from "../../types/wine-atlas";
+import WineCountrySnapshot from "./WineCountrySnapshot";
+import WinePassportStamp from "./WinePassportStamp";
 
 type WineCountryPanelProps = {
   country: WineCountrySummary | null;
@@ -53,50 +55,55 @@ export default function WineCountryPanel({
       <div className="h-[3px] bg-gradient-to-r from-rose-300 via-rose-400 to-transparent" />
 
       <div className="grid gap-0 lg:grid-cols-[0.78fr_1.22fr]">
-        <div className="border-b border-[#ead6dc]/80 p-5 lg:border-b-0 lg:border-r">
-          <div className="flex items-center gap-2">
-            <span className="h-2.5 w-2.5 rounded-full bg-rose-400 shadow-[0_0_14px_rgba(244,63,94,0.28)]" />
+        <div className="relative min-h-[260px] overflow-hidden border-b border-[#ead6dc]/80 p-5 lg:border-b-0 lg:border-r">
+          <WineCountrySnapshot countryCode={country.code} />
+          <WinePassportStamp countryCode={country.code} variant="entry" />
 
-            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-rose-400">
-              Current Country
-            </p>
-          </div>
+          <div className="relative z-[2]">
+            <div className="flex items-center gap-2">
+              <span className="h-2.5 w-2.5 rounded-full bg-rose-400 shadow-[0_0_14px_rgba(244,63,94,0.28)]" />
 
-          <div className="mt-4 flex flex-wrap items-center gap-3">
-            <h3 className="text-3xl font-black text-neutral-950">
-              {country.displayName}
-            </h3>
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-rose-400">
+                Current Country
+              </p>
+            </div>
 
-            <span className="rounded-full bg-rose-50 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-rose-400">
-              {country.code}
-            </span>
-          </div>
+            <div className="mt-4 flex flex-wrap items-center gap-3">
+              <h3 className="text-3xl font-black text-neutral-950">
+                {country.displayName}
+              </h3>
 
-          <p className="mt-1 text-sm text-neutral-400">{country.name}</p>
-
-          <div className="mt-5 flex flex-wrap gap-2">
-            <span className="rounded-full border border-rose-100 bg-rose-50 px-3 py-1.5 text-xs font-bold text-rose-500">
-              {formatBottleCount(country.wineCount)}
-            </span>
-
-            <span className="rounded-full border border-neutral-100 bg-neutral-100 px-3 py-1.5 text-xs font-bold text-neutral-600">
-              Avg {country.averageRating.toFixed(1)}
-            </span>
-
-            {country.regions.length > 0 ? (
-              country.regions.slice(0, 4).map((region) => (
-                <span
-                  key={region}
-                  className="rounded-full border border-neutral-100 bg-white px-3 py-1.5 text-xs font-medium text-neutral-500 shadow-sm"
-                >
-                  {region}
-                </span>
-              ))
-            ) : (
-              <span className="rounded-full border border-neutral-100 bg-neutral-100 px-3 py-1.5 text-xs font-medium text-neutral-400">
-                尚未記錄產區
+              <span className="rounded-full bg-rose-50 px-3 py-1 text-xs font-bold uppercase tracking-[0.18em] text-rose-400">
+                {country.code}
               </span>
-            )}
+            </div>
+
+            <p className="mt-1 text-sm text-neutral-400">{country.name}</p>
+
+            <div className="mt-5 flex flex-wrap gap-2">
+              <span className="rounded-full border border-rose-100 bg-rose-50 px-3 py-1.5 text-xs font-bold text-rose-500">
+                {formatBottleCount(country.wineCount)}
+              </span>
+
+              <span className="rounded-full border border-neutral-100 bg-neutral-100 px-3 py-1.5 text-xs font-bold text-neutral-600">
+                Avg {country.averageRating.toFixed(1)}
+              </span>
+
+              {country.regions.length > 0 ? (
+                country.regions.slice(0, 4).map((region) => (
+                  <span
+                    key={region}
+                    className="rounded-full border border-neutral-100 bg-white px-3 py-1.5 text-xs font-medium text-neutral-500 shadow-sm"
+                  >
+                    {region}
+                  </span>
+                ))
+              ) : (
+                <span className="rounded-full border border-neutral-100 bg-neutral-100 px-3 py-1.5 text-xs font-medium text-neutral-400">
+                  尚未記錄產區
+                </span>
+              )}
+            </div>
           </div>
         </div>
 
