@@ -132,15 +132,18 @@ export default function WineMap({ countries, wines }: WineMapProps) {
                   key={country.code}
                   type="button"
                   onClick={() => setSelectedCountryCode(country.code)}
-                  className={`grid w-full gap-3 rounded-[22px] px-4 py-4 text-left transition md:grid-cols-[1.2fr_0.8fr_1.4fr] md:items-center ${
+                  className={`relative grid w-full gap-3 overflow-hidden rounded-[22px] border px-4 py-4 text-left transition duration-300 md:grid-cols-[1.2fr_0.8fr_1.4fr] md:items-center ${
                     isSelected
-                      ? "border border-rose-100 bg-rose-50/85 shadow-[0_14px_36px_rgba(244,63,94,0.12)]"
-                      : "border border-transparent hover:border-rose-100/70 hover:bg-white/80 hover:shadow-sm"
+                      ? "-translate-y-[1px] border-[#e4cbd3] bg-white/92 shadow-[0_14px_34px_rgba(126,49,74,0.10)]"
+                      : "border-transparent bg-transparent hover:border-[#ead6dc]/70 hover:bg-white/55 hover:shadow-[0_8px_22px_rgba(35,20,30,0.035)]"
                   }`}
                 >
+                  {isSelected && (
+                    <span className="absolute bottom-4 left-0 top-4 w-1 rounded-r-full bg-gradient-to-b from-rose-300 to-rose-500 shadow-[0_0_14px_rgba(244,63,94,0.30)]" />
+                  )}
                   <div className="flex items-center gap-3">
                     <span
-                      className={`h-3.5 w-3.5 rounded-full border transition ${
+                      className={`h-3.5 w-3.5 rounded-full border transition duration-300 ${
                         isSelected ? "scale-125" : ""
                       }`}
                       style={{
@@ -148,12 +151,12 @@ export default function WineMap({ countries, wines }: WineMapProps) {
                         borderColor: useGold
                           ? wineMapColors.gold
                           : isSelected
-                          ? "rgba(244, 63, 94, 0.75)"
+                          ? "rgba(244, 63, 94, 0.85)"
                           : "rgba(190, 120, 140, 0.28)",
                         boxShadow: useGold
                           ? `0 0 14px ${wineMapColors.gold}66`
                           : isSelected
-                          ? "0 0 14px rgba(244,63,94,0.28)"
+                          ? "0 0 16px rgba(244,63,94,0.34)"
                           : "none",
                       }}
                     />
@@ -161,7 +164,7 @@ export default function WineMap({ countries, wines }: WineMapProps) {
                     <div>
                       <div className="flex items-center gap-2">
                         <span
-                          className={`text-xs font-bold uppercase tracking-[0.22em] ${
+                          className={`text-xs font-bold uppercase tracking-[0.22em] transition ${
                             isSelected ? "text-rose-500" : "text-rose-300"
                           }`}
                         >
