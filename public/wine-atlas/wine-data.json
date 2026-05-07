@@ -3,16 +3,27 @@
     "projectName": "Wine Atlas",
     "description": "A personal wine cellar map powered by tasting records.",
     "version": "0.1.0",
-    "updatedAt": "2026-05-05"
+    "updatedAt": "2026-05-06"
   },
   "countries": [
+    {
+      "code": "CHL",
+      "name": "Chile",
+      "displayName": "Chile",
+      "wineCount": 1,
+      "averageRating": 2.0,
+      "topWineId": "wine-004",
+      "regions": [
+        "Maule Valley"
+      ]
+    },
     {
       "code": "ESP",
       "name": "Spain",
       "displayName": "Spain",
       "wineCount": 1,
       "averageRating": 3.7,
-      "topWineId": "wine-003",
+      "topWineId": "wine-005",
       "regions": [
         "Castilla-La Mancha"
       ]
@@ -31,7 +42,30 @@
   ],
   "wines": [
     {
-      "id": "wine-003",
+      "id": "wine-004",
+      "name": "TAMBO Merlot 2024",
+      "winery": "TAMBO",
+      "country": "Chile",
+      "countryCode": "CHL",
+      "region": "Maule Valley",
+      "vintage": 2024,
+      "type": "red",
+      "grapes": [
+        "Merlot"
+      ],
+      "rating": 2.0,
+      "priceTwd": 279,
+      "tastedDate": "2026-05-06",
+      "tags": [
+        "拉完了"
+      ],
+      "recommend": true,
+      "repurchase": false,
+      "note": "雖然很便宜但真不好喝，口感偏酸且非常淡",
+      "image": null
+    },
+    {
+      "id": "wine-005",
       "name": "Raices Cabernet Sauvignon Selected Harvest",
       "winery": "Raices",
       "country": "Spain",
@@ -43,7 +77,7 @@
         "100% Cabernet Sauvignon"
       ],
       "rating": 3.7,
-      "priceTwd": 299,
+      "priceTwd": 259,
       "tastedDate": "2026-05-05",
       "tags": [
         "Daily Wine"

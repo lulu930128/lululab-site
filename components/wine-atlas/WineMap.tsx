@@ -94,7 +94,7 @@ export default function WineMap({ countries, wines }: WineMapProps) {
           </p>
         </div>
       ) : (
-        <div className="mt-8 rounded-[30px] border border-white/70 bg-white/58 p-5 shadow-[0_18px_50px_rgba(35,20,30,0.05)] backdrop-blur-md">
+        <div className="mt-8 rounded-[30px] border border-rose-100/80 bg-white/72 p-5 shadow-[0_18px_50px_rgba(35,20,30,0.065)] backdrop-blur-md">
           <div className="mb-2 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.28em] text-rose-400">
@@ -110,10 +110,10 @@ export default function WineMap({ countries, wines }: WineMapProps) {
             </p>
           </div>
 
-          <div
-            className={`divide-y divide-rose-100/70 ${
-              useScroll ? "max-h-[260px] overflow-y-auto pr-2" : ""
-            }`}
+            <div
+              className={`divide-y divide-[#ead6dc]/80 ${
+                useScroll ? "max-h-[260px] overflow-y-auto pr-2" : ""
+              }`}
             style={
               useScroll
                 ? {
@@ -134,8 +134,8 @@ export default function WineMap({ countries, wines }: WineMapProps) {
                   onClick={() => setSelectedCountryCode(country.code)}
                   className={`grid w-full gap-3 rounded-[22px] px-4 py-4 text-left transition md:grid-cols-[1.2fr_0.8fr_1.4fr] md:items-center ${
                     isSelected
-                      ? "bg-rose-50/80 shadow-[0_14px_36px_rgba(244,63,94,0.10)]"
-                      : "hover:bg-white/75 hover:shadow-sm"
+                      ? "border border-rose-100 bg-rose-50/85 shadow-[0_14px_36px_rgba(244,63,94,0.12)]"
+                      : "border border-transparent hover:border-rose-100/70 hover:bg-white/80 hover:shadow-sm"
                   }`}
                 >
                   <div className="flex items-center gap-3">
