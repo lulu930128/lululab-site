@@ -145,7 +145,7 @@ export default function WineAtlasPage() {
           )}
         </section>
 
-        <section className="mt-16 rounded-[34px] border border-white/70 bg-white/65 p-8 shadow-[0_20px_70px_rgba(35,20,30,0.06)] backdrop-blur-md">
+        {/* <section className="mt-16 rounded-[34px] border border-white/70 bg-white/65 p-8 shadow-[0_20px_70px_rgba(35,20,30,0.06)] backdrop-blur-md">
           <p className="text-xs font-semibold uppercase tracking-[0.32em] text-rose-400">
             Project Note
           </p>
@@ -168,7 +168,7 @@ export default function WineAtlasPage() {
               deployable frontend.
             </p>
           </div>
-        </section>
+        </section> */}
       </section>
     </main>
   );
