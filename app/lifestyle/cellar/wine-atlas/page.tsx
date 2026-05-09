@@ -102,7 +102,7 @@ export default function WineAtlasPage() {
               </div>
 
               <p className="text-sm text-neutral-500">
-                從已記錄的酒款中，挑出值得再次回味的選擇
+                從酒窖紀錄裡，挑出想再回味的一瓶
               </p>
             </div>
 

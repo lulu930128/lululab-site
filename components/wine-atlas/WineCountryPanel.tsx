@@ -1,7 +1,6 @@
 import type { WineCountrySummary, WineItem } from "../../types/wine-atlas";
 import WineCountrySnapshot from "./WineCountrySnapshot";
 import WineTravelStamp from "./WineTravelStamp";
-import WinePassportStamp from "./WinePassportStamp";
 
 type WineCountryPanelProps = {
   country: WineCountrySummary | null;
