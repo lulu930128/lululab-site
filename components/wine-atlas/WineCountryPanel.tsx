@@ -1,5 +1,6 @@
 import type { WineCountrySummary, WineItem } from "../../types/wine-atlas";
 import WineCountrySnapshot from "./WineCountrySnapshot";
+import WineTravelStamp from "./WineTravelStamp";
 import WinePassportStamp from "./WinePassportStamp";
 
 type WineCountryPanelProps = {
@@ -57,7 +58,10 @@ export default function WineCountryPanel({
       <div className="grid gap-0 lg:grid-cols-[0.78fr_1.22fr]">
         <div className="relative min-h-[260px] overflow-hidden border-b border-[#ead6dc]/80 p-5 lg:border-b-0 lg:border-r">
           <WineCountrySnapshot countryCode={country.code} />
-          <WinePassportStamp countryCode={country.code} variant="entry" />
+          <WineTravelStamp
+            countryCode={country.code}
+            countryName={country.displayName}
+          />
 
           <div className="relative z-[2]">
             <div className="flex items-center gap-2">
