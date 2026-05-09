@@ -119,7 +119,7 @@ export default function WineCountryPanel({
               </p>
 
               <h4 className="mt-2 text-lg font-black text-neutral-950">
-                代表酒款
+                精選酒款
               </h4>
             </div>
 

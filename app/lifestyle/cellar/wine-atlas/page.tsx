@@ -71,8 +71,7 @@ export default function WineAtlasPage() {
               Wine Atlas
             </h1>
             <p className="mt-5 max-w-2xl text-base leading-8 text-neutral-600">
-              把喝過的酒、產區與心得整理成資料庫，並用紅酒迷霧地圖呈現自己的探索進度。
-              第一版先以國家級探索、推薦清單與統計摘要為主。
+              把每一次開瓶、產區與心得整理成自己的酒窖資料庫，讓喝過的國家在紅酒迷霧地圖上被慢慢點亮。第一版以國家探索、推薦清單與近期品飲為主。
             </p>
           </div>
 
@@ -97,13 +96,13 @@ export default function WineAtlasPage() {
             <div className="mb-6 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-rose-400">
-                  Lulu Recommend
+                  Recommend
                 </p>
                 <h2 className="mt-3 text-3xl font-black">推薦酒款</h2>
               </div>
 
               <p className="text-sm text-neutral-500">
-                依照推薦標記與評分排序。
+                從已記錄的酒款中，挑出值得再次回味的選擇
               </p>
             </div>
 
@@ -127,7 +126,7 @@ export default function WineAtlasPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-rose-400">
               Recent Tasting
             </p>
-            <h2 className="mt-3 text-3xl font-black">最近品飲</h2>
+            <h2 className="mt-3 text-3xl font-black">最近開瓶</h2>
           </div>
 
           {recentWines.length > 0 ? (

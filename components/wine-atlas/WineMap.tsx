@@ -52,16 +52,15 @@ export default function WineMap({ countries, wines }: WineMapProps) {
             Wine Fog Map
           </p>
           <h2 className="mt-3 text-2xl font-black">
-            紅酒迷霧地圖・探索原型
+            紅酒迷霧地圖・探索進度
           </h2>
           <p className="mt-2 max-w-2xl text-sm leading-6 text-neutral-600">
-            第一版先以國家作為探索單位。喝過的國家會被酒紅色點亮，
-            高探索度國家會出現金色描邊，未來再加入真正的迷霧動畫效果。
+            以國家作為探索單位，喝過的產地會被酒紅色點亮；隨著紀錄增加，地圖也會逐步浮現自己的酒窖軌跡。
           </p>
         </div>
 
         <div className="rounded-2xl border border-rose-100 bg-rose-50/70 px-4 py-3 text-sm text-rose-500">
-          Explored：{countries.length} countries
+          {countries.length} countries explored
         </div>
       </div>
 
@@ -106,7 +105,7 @@ export default function WineMap({ countries, wines }: WineMapProps) {
             </div>
 
             <p className="text-xs leading-6 text-neutral-500">
-              依照酒款數量排序，作為地圖探索進度摘要。
+              依照酒款數量排序，記錄目前酒窖地圖的探索足跡
             </p>
           </div>
 
